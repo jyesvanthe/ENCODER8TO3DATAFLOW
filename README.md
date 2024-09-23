@@ -36,21 +36,39 @@ Figure 02  Encoder 8 * 3
 
 **Procedure**
 
-/* write all the steps invloved */
+step 1:Assign the input and output values in quartus 2 software
+step 2:write the logical expressions.
+step 3: In the waveform give the input values.
+step 4: generate rlt review
 
 **PROGRAM**
 
 /* Program for Encoder 8 To 3 in Dataflow Modelling and verify its truth table in quartus using Verilog programming. 
 
-Developed by: RegisterNumber:
+Developed by:JYESVANTHE V
+RegisterNumber:212223110018
+```
+module encoder(a0,a1,a2,d0,d1,d2,d3,d4,d5,d6,d7);
+input d0,d1,d2,d3,d4,d5,d6,d7;
+output a0,a1,a2;
+assign a0= d1|d3|d5|d7;
+assign a1= d2|d3|d6|d7;
+assign a2= d4|d5|d6|d7;
+endmodule
+```
 */
 
 **RTL LOGIC FOR Encoder 8 To 3 in Dataflow Modelling**
 
+![Screenshot 2024-09-23 111118](https://github.com/user-attachments/assets/7378920e-40e6-40d3-aa87-790230bfab24)
+
 **TIMING DIGRAMS FOR Encoder 8 To 3 in Dataflow Modelling**
+
+![Screenshot 2024-09-23 111015](https://github.com/user-attachments/assets/37d77a7d-c2af-4d2d-a172-7f485d77130b)
 
 **RESULTS**
 
-
+To implement  Encoder 8 To 3 in Dataflow Modelling using verilog and validating their functionality using their functional tables
+has been successfully completed.
 
 
